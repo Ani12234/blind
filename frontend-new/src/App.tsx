@@ -10,7 +10,7 @@ import {
 import Webcam from 'react-webcam';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = process.env.VITE_API_URL || 'http://localhost:8000';
 
 // Constants for distance estimation
 const MIN_DISTANCE = 1; // meters
